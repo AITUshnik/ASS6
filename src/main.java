@@ -20,7 +20,8 @@ public class main {
         System.out.println("********************************************************************");
         System.out.println("There is second code. Factory Method");
         System.out.println("********************************************************************");
-
+        //Its a Factory method part
+        //Two methods which shows our Factory method
         configure();
         runBusinessLogic();
     }
@@ -30,8 +31,10 @@ public class main {
      * environment options.
      */
     static void configure() {
+        //There only if your PC with OS "Windows 10" Java will show windows tab.
         if (System.getProperty("os.name").equals("Windows 10")) {
             dialog = new WindowsDialog();
+            //Else text on console
         } else {
             dialog = new HtmlDialog();
         }
@@ -44,8 +47,6 @@ public class main {
      */
     static void runBusinessLogic() {
         dialog.renderWindow();
-
-
     }
 
 
